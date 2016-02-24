@@ -1,6 +1,14 @@
 ## Benchmarks for JSON parsing in Nim
 
 ```zsh
+nim -v                                                                                     !249
+Nim Compiler Version 0.13.0 (2016-02-23) [Linux: amd64]
+Copyright (c) 2006-2015 by Andreas Rumpf
+
+git hash: a121c3f9eb2a348b9d6ae03ffd01aab26a238c30
+active boot switches: -d:release
+
+
 >% benchmark                                                                        
 NODE.js (require):
 Node.js parsed 389373 Objects
