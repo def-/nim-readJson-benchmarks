@@ -4,6 +4,9 @@ IMPORT="./data/import.json"
 echo "NODE.js (require):"
 time node json-reader.js $IMPORT
 
+echo "Ruby:"
+time ruby json-reader.rb $IMPORT
+
 echo "Nim readFile:"
 time ./lib/file_reader $IMPORT
 
