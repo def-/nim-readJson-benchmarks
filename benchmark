@@ -1,0 +1,11 @@
+#!/bin/bash
+IMPORT="./data/import.json"
+
+echo "NODE.js (require):"
+time node json-reader.js $IMPORT
+
+echo "Nim readFile:"
+time ./lib/file_reader $IMPORT
+
+echo "Nim parseJson:"
+time ./lib/json_reader $IMPORT
